@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-# name: discourse-qrl-address-balance
+# name: discourse-qrl-balance
 # about: Displays QRL address balance from the QRL Explorer API on Discourse topic pages.
-# version: 0.1.0
-# authors: Your Name/AI
-# url: https://github.com/your-username/discourse-qrl-address-balance [2]
+# version: 0.1.1
+# authors: fr1t2/AI
+# url: https://github.com/MerkleTreeLabs/discourse-qrl-balance
 
 # General asset registration
 register_asset 'stylesheets/common/qrl-address-balance.scss'
