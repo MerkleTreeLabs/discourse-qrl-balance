@@ -1,0 +1,25 @@
+plugins:
+  qrl_address_balance_enabled:
+    default: true
+    client: true # Makes this setting available on the client-side
+    type: bool
+    description: "Enable the QRL Address Balance plugin."
+
+  qrl_explorer_base_url:
+    default: "https://explorer.theqrl.org"
+    client: true
+    type: string
+    description: "Enter the base URL for the QRL Explorer API. E.g., https://explorer.theqrl.org"
+
+  qrl_category_id:
+    default: "" # Default to empty, admin must select
+    client: true
+    type: category
+    description: "Select the Discourse category where QRL address balances should display."
+
+  qrl_balance_refresh_interval_minutes:
+    default: 5
+    client: true
+    min: 1
+    type: integer
+    description: "How often to refresh the QRL balance data on the client side (in minutes)."
