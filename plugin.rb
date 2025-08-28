@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-# name: discourse-qrl-address-balance
+# name: discourse-qrl-balance
 # about: Displays QRL address balance from the QRL Explorer API on Discourse topic pages.
 # version: 0.1.0
 # authors: Your Name/AI
-# url: https://github.com/your-username/discourse-qrl-address-balance
+# url: https://github.com/your-username/discourse-qrl-balance
 
 # General asset registration (stays at the top level)
 register_asset 'stylesheets/common/qrl-address-balance.scss'
@@ -46,7 +46,7 @@ after_initialize do
   # This whole class definition and its logic *depends* on the plugin being enabled.
   # Therefore, it should be placed *after* the `return unless` check.
   class DiscourseQrlAddressBalance::QrlProxyController < ApplicationController
-    requires_plugin 'discourse-qrl-address-balance' # Ensures this controller is tied to our plugin
+    requires_plugin 'discourse-qrl-balance' # Ensures this controller is tied to our plugin
     skip_before_action :check_xhr, :preload_json
 
     def show
