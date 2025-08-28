@@ -1,0 +1,140 @@
+// Styles for the main balance display within a topic
+.qrl-balance-wrapper {
+
+  // Provides clear spacing from other topic elements
+  margin-top: 15px; 
+
+  // Inner padding for content
+  padding: 15px 20px; 
+
+  // Uses Discourse theme background
+  background-color: var(--secondary-background); 
+
+  // Highlight border on the left
+  border-left: 5px solid var(--tertiary); 
+
+  // Rounded corners
+  border-radius: var(--border-radius); 
+
+  // Inherit Discourse font
+  font-family: var(--font-family); 
+  font-size: 1.1em;
+  display: flex;
+
+  // Stack elements vertically
+  flex-direction: column; 
+
+  // Space between elements inside the wrapper
+  gap: 8px; 
+
+  &.error {
+
+    // Lighter red background for errors
+    background-color: var(--danger-low); 
+
+    // Red border for errors
+    border-color: var(--danger); 
+  }
+
+  .qrl-balance-display {
+    display: flex;
+
+    // Align text baselines
+    align-items: baseline; 
+
+    // Allow content to wrap on smaller screens
+    flex-wrap: wrap; 
+
+    &.error {
+
+      // Red text for error state
+      color: var(--danger); 
+      .qrl-balance-value {
+
+        // Make error value bold
+        font-weight: bold; 
+      }
+    }
+  }
+
+  .qrl-balance-label {
+    font-weight: bold;
+    margin-right: 10px;
+
+    // Subdued text color
+    color: var(--primary-low-mid); 
+  }
+
+  .qrl-balance-value {
+
+    // Use a vibrant color for the balance value
+    color: var(--highlight); 
+
+    // Larger font size for prominence
+    font-size: 1.4em; 
+    font-weight: bold;
+    margin-right: 15px;
+
+    // Prevents long addresses from overflowing
+    word-break: break-all; 
+  }
+
+  .qrl-balance-timestamp {
+    font-size: 0.85em;
+    
+    // Subdued text for timestamp
+    color: var(--primary-low-mid); 
+  }
+
+  .qrl-balance-error-message {
+    margin-top: 8px;
+    font-size: 0.9em;
+    
+    // Clear red for error messages
+    color: var(--danger); 
+    font-weight: 500;
+  }
+}
+
+// Styles for the concise balance indicator in topic lists
+.qrl-list-balance-wrapper {
+  display: flex;
+  align-items: center;
+  
+  // Small margin to separate from topic title
+  margin-left: 8px; 
+
+  .qrl-list-balance {
+    font-weight: bold;
+    
+    // Uses a highlight color
+    color: var(--highlight); 
+    
+    // Slightly smaller font for brevity
+    font-size: 0.85em; 
+    padding: 3px 7px;
+    
+    // Inherit general border-radius
+    border-radius: var(--border-radius); 
+    
+    // A contrasting background color from the theme
+    background-color: var(--tertiary); 
+    
+    // Prevents balance from wrapping
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+    // Limit width to prevent encroaching on other elements
+    max-width: 120px; 
+
+    &.error {
+      
+      // Red background for errors in list view
+      background-color: var(--danger); 
+      
+      // White text for visibility on red
+      color: white; 
+    }
+  }
+}

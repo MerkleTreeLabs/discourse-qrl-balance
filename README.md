@@ -1,4 +1,4 @@
-# ✨ QRL Address Balance Plugin for Discourse ✨
+# ✨ Discourse QRL Balance Plugin ✨
 
 Elevate your Discourse community by seamlessly integrating real-time QRL blockchain data directly into your topics! The QRL Address Balance Plugin empowers you to display the current fund balance of any QRL address within your designated categories, providing dynamic, up-to-date information at a glance.
 
@@ -38,7 +38,7 @@ Installing the QRL Address Balance Plugin is straightforward. Follow these steps
 
 3.  **Clone the plugin repository:**
     ```bash
-    git clone https://github.com/MerkleTreeLabs/Discorse-QRL-Balance.git
+    git clone https://github.com/MerkleTreeLabs/Discourse-QRL-Balance.git
     ```
 
 4.  **Edit your `app.yml` file:**
@@ -88,7 +88,7 @@ Now, when any user views this topic, they will see an elegant box displaying the
 ## 📂 Plugin File Structure
 
 ```
-discourse-qrl-address-balance/
+discourse-qrl-balance/
 ├── assets/
 │   ├── javascripts/
 │   │   └── discourse/

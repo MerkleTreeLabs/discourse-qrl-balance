@@ -1,8 +1,8 @@
-import { with              } from "@ember/object";
+import { with } from "@ember/object";
 import { inject as service } from "@ember/service";
-import Component           from "@ember/component";
-import { scheduleOnce      } from "@ember/runloop";
-import { empty             } from "@ember/object/computed";
+import Component  "@ember/component";
+import { scheduleOnce } from "@ember/runloop";
+import { empty } from "@ember/object/computed";
 
 // Extend the Topic model to include the custom field for QRL address.
 // This makes `topic.qrlAddress` accessible in client-side Ember models.

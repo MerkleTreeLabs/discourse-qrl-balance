@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-# name: Discorse-QRL-Balance
+# name: Discourse-QRL-Balance
 # about: Displays QRL address balance from the QRL Explorer API on Discourse topic pages.
 # version: 0.1.0
 # authors: Fr1t2/AI
-# url: https://github.com/MerkleTreeLabs/Discorse-QRL-Balance
+# url: https://github.com/MerkleTreeLabs/Discourse-QRL-Balance
 
 # Define new site settings for the plugin
 # These will appear in Admin -> Settings -> Plugins
